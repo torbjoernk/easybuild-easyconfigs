@@ -11,17 +11,17 @@ source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%%(namelower)s_%s.tar.gz' % '_'.join(version.split('.'))]
 
 dependencies = [
-    ('bzip2', '1.0.6'),
-    ('zlib', '1.2.8')
+    ('bzip2', '1.0.6', '', ('GNU', '5.2.0-2.25')),
+    ('zlib', '1.2.8', '', ('GNU', '5.2.0-2.25'))
 ]
 
 osdependencies = [
     ('icu', 'libicu', 'libicu-devel')
 ]
 
-# checksums = [
-#     ''
-# ]
+checksums = [
+    '51528a0e3b33d9e10aaa311d9eb451e3'
+]
 
 # also build boost_mpi
 boost_mpi = False

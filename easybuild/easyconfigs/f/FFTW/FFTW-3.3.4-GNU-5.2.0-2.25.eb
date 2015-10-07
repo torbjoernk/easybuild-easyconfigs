@@ -14,7 +14,7 @@ sources = [SOURCELOWER_TAR_GZ]
 source_urls = [homepage]
 
 dependencies = [
-    ('MPICH', '3.1.4')
+    ('MPICH', '3.1.4', '', ('GNU', '5.2.0-2.25'))
 ]
 
 common_configopts = "--enable-threads --enable-openmp --with-pic"
@@ -24,6 +24,10 @@ configopts = [
     common_configopts + " --enable-long-double --enable-mpi",
     common_configopts + " --enable-quad-precision",
     common_configopts + " --enable-sse2 --enable-mpi",  # default as last
+]
+
+checksums = [
+    '2edab8c06b24feeb3b82bbb3ebf3e7b3'
 ]
 
 sanity_check_paths = {

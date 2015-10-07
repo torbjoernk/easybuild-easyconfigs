@@ -12,4 +12,8 @@ toolchainopts = {'pic': True}
 sources = [SOURCE_TAR_GZ]
 source_urls = ['http://www.bzip.org/%(version)s']
 
+checksums = [
+    '00b516f4704d4a7cb50a1d97e6e8e15b'
+]
+
 moduleclass = 'tools'

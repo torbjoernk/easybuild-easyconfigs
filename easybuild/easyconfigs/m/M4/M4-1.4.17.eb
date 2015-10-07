@@ -17,6 +17,10 @@ source_urls = [GNU_SOURCE]
 
 configopts = "--enable-cxx"
 
+checksums = [
+    'a5e9954b1dae036762f7b13673a2cf76'
+]
+
 sanity_check_paths = {
     'files': ["bin/m4"],
     'dirs': [],

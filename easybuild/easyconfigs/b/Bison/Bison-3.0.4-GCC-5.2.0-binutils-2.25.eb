@@ -12,6 +12,10 @@ toolchain = {'name': 'GCC', 'version': '5.2.0-binutils-2.25'}
 sources = [SOURCELOWER_TAR_GZ]
 source_urls = [GNU_SOURCE]
 
+checksums = [
+    'a586e11cd4aff49c3ff6d3b6a4c9ccf8'
+]
+
 builddependencies = [
     ('M4', '1.4.17'),
     # use same binutils version that was used when building GCC toolchain
