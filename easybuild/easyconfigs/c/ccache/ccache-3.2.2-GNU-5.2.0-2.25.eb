@@ -1,0 +1,32 @@
+##
+# This file is an EasyBuild reciPY as per https://github.com/hpcugent/easybuild
+#
+# Copyright:: Copyright 2012-2014 Uni.Lu/LCSB, NTUA
+# Authors::   Fotis Georgatos <fotis@cern.ch>
+# License::   MIT/GPL
+# $Id$
+##
+
+easyblock = 'CCache'
+
+name = 'ccache'
+version = '3.2.2'
+
+homepage = "http://ccache.samba.org/"
+description = """ccache-3.2.2: Cache for C/C++ compilers"""
+
+sources = [SOURCE_TAR_GZ]
+source_urls = ['http://samba.org/ftp/ccache/']
+
+
+toolchain = {'name': 'GNU', 'version': '5.2.0-2.25'}
+
+ccache_dir_base = "/var/cache/ccache/eb"
+
+sanity_check_paths = {
+    'files': ['bin/ccache'],
+    'dirs': []
+}
+
+moduleclass = 'tools'
+
