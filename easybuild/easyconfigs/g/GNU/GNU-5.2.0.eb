@@ -1,0 +1,16 @@
+easyblock = 'Toolchain'
+
+name = 'GNU'
+gccver = '5.2.0'
+version = gccver
+
+homepage = 'http://www.gnu.org/software/'
+description = "Compiler-only toolchain with GCC and binutils."
+
+toolchain = {'name': 'dummy', 'version': ''}
+
+dependencies = [
+    ('GCC', gccver, '', True),
+]
+
+moduleclass = 'toolchain'

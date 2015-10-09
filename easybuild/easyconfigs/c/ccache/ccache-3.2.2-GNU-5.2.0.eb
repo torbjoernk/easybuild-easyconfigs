@@ -19,7 +19,7 @@ sources = [SOURCE_TAR_GZ]
 source_urls = ['http://samba.org/ftp/ccache/']
 
 
-toolchain = {'name': 'GNU', 'version': '5.2.0-2.25'}
+toolchain = {'name': 'GNU', 'version': '5.2.0'}
 
 ccache_dir_base = "/var/cache/ccache/eb"
 

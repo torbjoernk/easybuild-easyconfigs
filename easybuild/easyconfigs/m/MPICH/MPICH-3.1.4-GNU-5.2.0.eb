@@ -7,7 +7,7 @@ homepage = 'http://www.mpich.org/'
 description = """MPICH v3.x is an open source high-performance MPI 3.0 implementation.
 It does not support InfiniBand (use MVAPICH2 with InfiniBand devices)."""
 
-toolchain = {'name': 'GNU', 'version': '5.2.0-2.25'}
+toolchain = {'name': 'GNU', 'version': '5.2.0'}
 
 sources = ['mpich-%(version)s.tar.gz']
 source_urls = ['http://www.mpich.org/static/tarballs/%(version)s']

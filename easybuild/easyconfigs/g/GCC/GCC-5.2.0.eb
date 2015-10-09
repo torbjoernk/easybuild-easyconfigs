@@ -28,7 +28,10 @@ sources = [
 
 patches = [('mpfr-%s-allpatches-20150717.patch' % mpfr_version, '../mpfr-%s' % mpfr_version)]
 
-builddependencies = [('M4', '1.4.17')]
+osdependencies = [
+    ('m4', ),
+    ('binutils', 'binutils-devel', 'binutils-gold', 'binutils-debuginfo'),
+]
 
 checksums = [
     'a51bcfeb3da7dd4c623e27207ed43467',     # gcc-5.2.0.tar.bz2
@@ -36,7 +39,7 @@ checksums = [
     '7b650781f0a7c4a62e9bc8bdaaa0018b',     # mpfr-3.1.3.tar.gz
     'd6a1d5f8ddea3abd2cc3e98f58352d26',     # mpc-1.0.3.tar.gz
     'acd347243fca5609e3df37dba47fd0bb',     # isl-0.14.tar.bz2
-    'e502185ebb22b41c528f183bb22a7569',     # mpfr-3.1.3-allpatches-20150717.patch
+    'e502185ebb22b41c528f183bb22a7569',     # mpfr-3.1.2-allpatches-20150717.patch
 ]
 
 languages = ['c', 'c++', 'fortran']

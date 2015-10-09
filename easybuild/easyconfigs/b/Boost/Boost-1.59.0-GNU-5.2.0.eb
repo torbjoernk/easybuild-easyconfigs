@@ -4,19 +4,16 @@ version = '1.59.0'
 homepage = 'http://www.boost.org/'
 description = """Boost provides free peer-reviewed portable C++ source libraries."""
 
-toolchain = {'name': 'GNU', 'version': '5.2.0-2.25'}
-toolchainopts = {'pic': True, 'cstd': 'c++11'}
+toolchain = {'name': 'GNU', 'version': '5.2.0'}
+toolchainopts = {'pic': True}
 
 source_urls = [SOURCEFORGE_SOURCE]
 sources = ['%%(namelower)s_%s.tar.gz' % '_'.join(version.split('.'))]
 
-dependencies = [
-    ('bzip2', '1.0.6', '', ('GNU', '5.2.0-2.25')),
-    ('zlib', '1.2.8', '', ('GNU', '5.2.0-2.25'))
-]
-
 osdependencies = [
-    ('icu', 'libicu', 'libicu-devel')
+    ('bzip2', 'libzip2'),
+    ('zlib-devel', ),
+    ('icu', 'libicu-devel', 'icu-data')
 ]
 
 checksums = [
@@ -25,5 +22,6 @@ checksums = [
 
 # also build boost_mpi
 boost_mpi = False
+build_type = 'complete'
 
 moduleclass = 'devel'
